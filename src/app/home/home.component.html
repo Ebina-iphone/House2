@@ -6,5 +6,7 @@
 </section>
 
 <section class="results">
-    <app-housing-location *ngFor="let housingLocation of housingLocationList" [housingLocation]="housingLocation"></app-housing-location>
+    <app-housing-location *ngFor="let ListOfOne of housingLocationList" [housingLocation]="ListOfOne"></app-housing-location>
 </section>
+<!-- housingLocationListのうちの一つがListOfOneっていう変数に入る。
+housingLocationは受け取る側の＠inputの名前 だからinputの中に入って、housingLocationHTMLの中で表示ができるよ -->
